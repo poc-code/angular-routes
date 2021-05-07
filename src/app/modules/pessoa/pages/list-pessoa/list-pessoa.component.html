@@ -1,0 +1,23 @@
+<p>list-pessoa works!</p>
+<div>
+    <table  class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Idade</th>
+                <th>Ativo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pessoa of pessoas">
+                <td>{{ pessoa.Id }}</td>
+                <td>{{ pessoa.Nome }}</td>
+                <td>{{ pessoa.Email }}</td>
+                <td>{{ pessoa.Idade }}</td>
+                <td>{{ pessoa.Ativo }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

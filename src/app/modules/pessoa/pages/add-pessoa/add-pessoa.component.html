@@ -1,0 +1,31 @@
+<p>add-pessoa works!</p>
+<div class="container">
+    <form>
+        <div class="form-table">
+            <div class="form-group">
+                <label>Nome: </label>
+                <div class="input-group">
+                    <input type="text" (ngModel)="pessoa.Nome" #nome value="{{pessoa.Nome}}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>E-mail: </label>
+                <div class="input-group">
+                    <input type="text" (ngModel)="pessoa.Email" #email value="{{ pessoa.Email }}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Idade: </label>
+                <div class="input-group">
+                    <input type="number" (ngModel)="pessoa.Idade" #idade value="{{ pessoa.Idade}}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Ativo: </label>
+                <div class="input-group">
+                    <input type="checkbox" (ngModel)="pessoa.Ativo" #ativo ng-checked="pessoa.Ativo == true" value="{{ pessoa.Ativo }}" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
